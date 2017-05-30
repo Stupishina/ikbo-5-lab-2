@@ -7,7 +7,7 @@ int *tape;
 int size = 1;
 int l = 0;
 
-char* space (char* s, char* a);
+char* space (char* с, char* a);
 
 int main() {
 char c[K], name[K], **a;
@@ -42,7 +42,7 @@ for(i=0; i<size; i++)
 return 0;
 }
 
-char *space(char* c, char* a){
+char *space(char* c, char* a) {
 int i, j;
 j = 0;
 a = (char*)malloc(sizeof(char)*6);
@@ -102,12 +102,12 @@ if (l==0) {
 return 0;
 }
 
-int movr(){
+int movr() {
 if (l==(size-1)) {
     int *temp;
     size++;
     l++;
-    temp=(int*) realloc (tape, sizeof(int) * size);
+    temp=(int*) realloc (tape, sizeof(int)*size);
     if(temp != NULL){
         temp[size-1] = 0;
         tape=temp;
